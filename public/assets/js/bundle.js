@@ -458,7 +458,7 @@ eval("var logLevel = \"info\";\n\nfunction dummy() {}\n\nfunction shouldLog(leve
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/app.scss */ \"./resources/scss/app.scss\");\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_app_scss__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\n(function () {\r\n  \"use strict\";\r\n\r\n  feather.replace();\r\n});\r\n\n\n//# sourceURL=webpack:///./resources/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/app.scss */ \"./resources/scss/app.scss\");\n/* harmony import */ var _scss_app_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_scss_app_scss__WEBPACK_IMPORTED_MODULE_0__);\n\n\nfeather.replace();\n\n//# sourceURL=webpack:///./resources/js/app.js?");
 
 /***/ }),
 
@@ -480,7 +480,7 @@ eval("// removed by extract-text-webpack-plugin\n\n//# sourceURL=webpack:///./re
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! C:\\Users\\carlo\\Documents\\Projects\\rebranding-itau\\node_modules\\webpack-dev-server\\client\\index.js?http://localhost:3000 */\"./node_modules/webpack-dev-server/client/index.js?http://localhost:3000\");\nmodule.exports = __webpack_require__(/*! C:\\Users\\carlo\\Documents\\Projects\\rebranding-itau\\resources\\js\\app.js */\"./resources/js/app.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
+eval("__webpack_require__(/*! /Applications/MAMP/htdocs/DevBoost/rebranding-itau/node_modules/webpack-dev-server/client/index.js?http://localhost:3000 */\"./node_modules/webpack-dev-server/client/index.js?http://localhost:3000\");\nmodule.exports = __webpack_require__(/*! /Applications/MAMP/htdocs/DevBoost/rebranding-itau/resources/js/app.js */\"./resources/js/app.js\");\n\n\n//# sourceURL=webpack:///multi_(webpack)-dev-server/client?");
 
 /***/ })
 
