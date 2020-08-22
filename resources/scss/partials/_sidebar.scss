@@ -1,27 +1,36 @@
+$primary-color: #f57921;
+$secondary-color: #004990;
+$accent-color: #ffe512;
+
 .sidebar {
   & {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-    z-index: 100; /* Behind the navbar */
-    padding: 48px 0 0; /* Height of navbar */
+    z-index: 100;
+    padding: 25px 0px 40px 0px;
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+    flex: 0 0 106px;
+    max-width: 106px;
+    border-radius: 0px 18px 18px 0px;
   }
 
   @media (max-width: 767.98px) {
     .sidebar {
       top: 5rem;
+      flex: 0 0 106px;
+      max-width: 106px;
     }
   }
 
   .nav-link {
     font-weight: 500;
-    color: #333;
+    color: $accent-color;
 
     .feather {
       margin-right: 4px;
-      color: #999;
+      color: $accent-color;
     }
 
     .active {
@@ -54,4 +63,16 @@
 .sidebar-heading {
   font-size: 0.75rem;
   text-transform: uppercase;
+}
+
+.bg-primary-brand {
+  background: $primary-color;
+}
+
+.bg-secondary-brand {
+  background: $secondary-color;
+}
+
+.bg-accent-brand {
+  background: $accent-color;
 }
