@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap";
 @import "./partials/navbar";
 @import "./partials/sidebar";
+@import "./partials/sidebar-accounts";
 
 body {
   font-size: 0.875rem;
@@ -10,4 +11,9 @@ body {
   width: 16px;
   height: 16px;
   vertical-align: text-bottom;
+}
+
+main {
+	width: 100%;
+	padding-left: calc(320px + 15px);
 }
