@@ -26,15 +26,18 @@ $accent-color: #ffe512;
 
   .nav-link {
     font-weight: 500;
-    color: $accent-color;
+    color: #fff;
 
-    .feather {
-      margin-right: 4px;
-      color: $accent-color;
+    .material-icons-outlined {
+      font-size: 34px;
     }
 
     .active {
-      color: #007bff;
+      color: $accent-color;
+
+      .feather {
+        color: $accent-color;
+      }
     }
 
     &:hover .feather,
