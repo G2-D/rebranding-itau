@@ -15,5 +15,14 @@ body {
 
 main {
 	width: 100%;
-	padding-left: calc(320px + 15px);
+	padding-left: calc(320px + 106px + 15px);
+}
+
+aside {
+	width: calc(320px + 106px);
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: #efe9e5;
 }
