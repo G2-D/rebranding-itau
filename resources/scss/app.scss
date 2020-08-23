@@ -5,24 +5,19 @@
 
 body {
   font-size: 0.875rem;
-}
-
-.feather {
-  width: 16px;
-  height: 16px;
-  vertical-align: text-bottom;
+  font-family: myriad-pro, sans-serif;
 }
 
 main {
-	width: 100%;
-	padding-left: calc(320px + 106px + 15px);
+  width: 100%;
+  padding-left: calc(320px + 106px + 15px);
 }
 
 aside {
-	width: calc(320px + 106px);
-	height: 100vh;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: #efe9e5;
+  width: calc(320px + 106px);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #efe9e5;
 }
