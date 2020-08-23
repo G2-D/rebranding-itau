@@ -7230,23 +7230,25 @@ a.text-dark:hover, a.text-dark:focus {
 .bg-accent-brand {
   background: #ffe512; }
 
-.sidebar-account {
-  width: 320px;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 106px; }
+.section-account {
+  width: 100%; }
 
-.sidebar-account .account-list {
+.section-account .account-list {
   display: flex;
-  flex-direction: column;
-  height: 100vh; }
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 64px; }
 
-.sidebar-account .account-list .card {
+.section-account .account-list .card {
+  width: 240px;
+  height: 140px;
+  flex: 0 0 260px;
   margin-top: 15px;
-  min-height: 137px; }
+  margin-right: 15px;
+  min-height: 137px;
+  border-radius: 30px; }
 
-.sidebar-account .account-list .card .card-icon {
+.section-account .account-list .card .card-icon {
   width: 32px;
   height: 32px;
   background-color: red;
@@ -7258,45 +7260,36 @@ a.text-dark:hover, a.text-dark:focus {
   text-align: center;
   line-height: 32px; }
 
-.sidebar-account .account-list .card .card-title {
+.section-account .account-list .card .card-title {
   line-height: 24px; }
 
-.sidebar-account .account-list .card .card-title strong {
+.section-account .account-list .card .card-title strong {
   display: block;
   font-size: 18px; }
 
-.sidebar-account .account-list .card .card-title span {
+.section-account .account-list .card .card-title span {
   font-size: 14px; }
 
-.sidebar-account .account-list .card .card-text {
+.section-account .account-list .card .card-text {
   font-size: 24px;
   color: #004990; }
 
-.sidebar-account .account-list .card .card-text.positive {
+.section-account .account-list .card .card-text.positive {
   color: #229870; }
 
-.sidebar-account .account-list .card .card-text.negative {
+.section-account .account-list .card .card-text.negative {
   color: #935BA8; }
 
-.sidebar-account .account-list .card .card-text a {
+.section-account .account-list .card .card-text a {
   float: right; }
 
-.sidebar-account .account-list .card-btn-add {
-  background: none;
-  box-shadow: none; }
+.table-transfer {
+  width: 100%;
+  float: left;
+  margin-top: 64px; }
 
-.sidebar-account .account-list .card-btn-add .btn-add-account {
-  height: 100%;
-  padding: 24px;
-  border: 1px dashed #004990;
-  font-size: 18px;
-  font-weight: bold;
-  color: #004990;
-  box-shadow: none; }
-
-.sidebar-account .account-list .card-btn-add .btn-add-account svg {
-  vertical-align: middle;
-  margin-right: 8px; }
+.table-transfer .table {
+  background-color: #FFFFFF; }
 
 .nav-main {
   border: 2px solid #e3cdc9;
