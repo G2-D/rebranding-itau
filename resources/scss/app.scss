@@ -2,6 +2,7 @@
 @import "./partials/navbar";
 @import "./partials/sidebar";
 @import "./partials/sidebar-accounts";
+@import "./partials/navmain";
 
 body {
   font-size: 0.875rem;
@@ -10,14 +11,7 @@ body {
 
 main {
   width: 100%;
-  padding-left: calc(320px + 106px + 15px);
-}
-
-aside {
-  width: calc(320px + 106px);
+  padding-left: 106px;
+  background: #f0e9e6;
   height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #efe9e5;
 }
