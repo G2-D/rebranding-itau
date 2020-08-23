@@ -78,9 +78,6 @@ module.exports = {
 			'.json'
 		]
 	},
-	externals: {
-		feather : 'feather'
-	},
 	optimization : {
 		minimizer : [
 			new TerserPlugin({

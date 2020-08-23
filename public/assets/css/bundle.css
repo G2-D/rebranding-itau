@@ -7286,10 +7286,81 @@ a.text-dark:hover, a.text-dark:focus {
 .table-transfer {
   width: 100%;
   float: left;
-  margin-top: 64px; }
+  margin-top: 64px;
+  padding-left: 15px; }
 
 .table-transfer .table {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  border-top-left-radius: 18px;
+  border: 0;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); }
+
+.table-transfer .table tr:hover td {
+  background-color: #f4eceb; }
+
+.table-transfer .table tr:not(:last-child) td {
+  border-bottom: 1px solid #e3cdc9; }
+
+.table-transfer .table th, .table-transfer .table td {
+  padding: 18px 24px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  border: 0;
+  vertical-align: middle; }
+  .table-transfer .table th.amount, .table-transfer .table td.amount {
+    text-align: right; }
+
+.table-transfer .table th {
+  border-bottom: 1px solid #e3cdc9; }
+
+.table-transfer .table th button.btn-sortable {
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: 0;
+  vertical-align: middle;
+  padding: 0;
+  outline: none; }
+
+.table-transfer .table th button.btn-sortable i {
+  width: 100%;
+  font-size: 18px;
+  line-height: 18px; }
+
+.table-transfer .table td .flag {
+  display: inline-block;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: normal;
+  border-radius: 4px;
+  border: 1px solid transparent; }
+
+.table-transfer .table td .flag-done {
+  background-color: #35d29d;
+  color: #0b3023;
+  border-color: #1e8764; }
+
+.table-transfer .table td .flag-canceled {
+  background-color: #b48dc3;
+  color: #4b2e56;
+  border-color: #88539c; }
+
+.table-transfer .table td .flag-pending {
+  background-color: #ffed5f;
+  color: #928200;
+  border-color: #fde100; }
+
+.table-transfer .table td .btn-details {
+  float: right;
+  color: #af7064;
+  border-color: #dabdb8; }
+
+.table-transfer .table td .btn-details:hover {
+  color: #FFFFFF;
+  background-color: #72443b;
+  border-color: #72443b; }
 
 .nav-main {
   border: 2px solid #e3cdc9;
@@ -7320,10 +7391,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-size: 0.875rem;
-  font-family: myriad-pro, sans-serif; }
+  font-family: myriad-pro, sans-serif;
+  background: #f0e9e6; }
 
 main {
   width: 100%;
   padding-left: 106px;
-  background: #f0e9e6;
   height: 100vh; }

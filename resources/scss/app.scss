@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap";
+@import "./partials/mixins";
 @import "./partials/navbar";
 @import "./partials/sidebar";
 @import "./partials/section-accounts";
@@ -8,11 +9,11 @@
 body {
   font-size: 0.875rem;
   font-family: myriad-pro, sans-serif;
+  background: #f0e9e6;
 }
 
 main {
   width: 100%;
   padding-left: 106px;
-  background: #f0e9e6;
   height: 100vh;
 }

@@ -4,9 +4,115 @@
 		width: 100%;
 		float: left;
 		margin-top: 64px;
+		padding-left: 15px;
 	}
 
 	.table {
-		background-color: #FFFFFF
+		
+		& {
+			background-color: #FFFFFF;
+			border-top-left-radius: 18px;
+			border: 0;
+			box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+		}
+
+		tr {
+
+			&:hover {
+
+				td {
+					background-color: lighten($color: #e3cdc9, $amount: 10%);
+				}
+			} 
+
+			&:not(:last-child) {
+
+				td {
+					border-bottom: 1px solid #e3cdc9;
+				}
+			}
+		}
+
+		th, td {
+			padding: 18px 24px;
+			font-size: 14px;
+			line-height: 14px;
+			font-weight: normal;
+			border: 0;
+			vertical-align: middle;
+
+			&.amount {
+				text-align: right;
+			}
+		}
+
+		th {
+			
+			& {
+				border-bottom: 1px solid #e3cdc9;
+			}
+
+			button.btn-sortable {
+				
+				& {
+					width: 24px;
+					height: 18px;
+					background: transparent;
+					border: 0;
+					vertical-align: middle;
+					padding: 0;
+					outline: none;
+				}
+
+				i {
+					width: 100%;
+					font-size: 18px;
+					line-height: 18px;
+				}
+			}
+		}
+
+		td {
+
+			.flag {
+
+				& {
+					display: inline-block;
+					padding: 8px;
+					font-size: 14px;
+					line-height: 14px;
+					font-weight: normal;
+					border-radius: 4px;
+					border: 1px solid transparent;
+				}
+
+				&-done {
+					@include flag(#229870);
+				}
+
+				&-canceled {
+					@include flag(#935BA8);
+				}
+
+				&-pending {
+					@include flag(#ffe512);
+				}
+			}
+
+			.btn-details {
+				
+				& {
+					float: right;
+					color: darken($color: #e3cdc9, $amount: 30%);
+					border-color: darken($color: #e3cdc9, $amount: 5%);
+				}
+
+				&:hover {
+					color: #FFFFFF;
+					background-color: darken($color: #e3cdc9, $amount: 50%);
+					border-color: darken($color: #e3cdc9, $amount: 50%);
+				}
+			}
+		}
 	}
 }

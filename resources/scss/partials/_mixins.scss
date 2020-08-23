@@ -1,0 +1,5 @@
+@mixin flag ($color) {
+	background-color: lighten($color, $amount: 15%);
+	color: darken($color, $amount: 25%);
+	border-color: darken($color, $amount: 4%);
+}
