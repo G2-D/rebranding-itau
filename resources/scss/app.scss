@@ -5,6 +5,7 @@
 @import "./partials/section-accounts";
 @import "./partials/table-transfer";
 @import "./partials/navmain";
+@import "./partials/cards-brand";
 
 body {
   font-size: 0.875rem;
@@ -14,6 +15,6 @@ body {
 
 main {
   width: 100%;
-  padding-left: 106px;
+  padding-left: 126px;
   height: 100vh;
 }

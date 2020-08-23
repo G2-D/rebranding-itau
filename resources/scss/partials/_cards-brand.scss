@@ -1,0 +1,98 @@
+@import "./vars";
+
+.cards-brand {
+  & {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 64px;
+    margin-right: 16px;
+  }
+
+  .card {
+    & {
+      min-width: 600px;
+      flex: 0 0 500px;
+      margin-top: 15px;
+      margin-right: 15px;
+      min-height: 137px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      overflow: hidden;
+      border-left: 5px solid #ffffff;
+      box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      cursor: pointer;
+    }
+
+    img {
+      box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    &:hover {
+      border-left: 5px solid $primary-color;
+    }
+
+    .card-data {
+      width: 100%;
+
+      .title {
+        font-size: 18px;
+        color: #252220;
+        font-weight: bold;
+      }
+
+      .card-icon {
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top: 7px;
+        right: 5px;
+        -webkit-border-radius: 32px;
+        border-radius: 32px;
+        text-align: center;
+        line-height: 32px;
+
+        .material-icons-outlined {
+          color: $primary-color;
+        }
+      }
+
+      .data-item {
+        line-height: 1.2;
+        width: 100%;
+
+        span {
+          font-size: 14px;
+          font-weight: 600;
+          color: $secondary-color;
+        }
+
+        > strong {
+          font-size: 26px;
+          font-weight: bold;
+          color: $secondary-color;
+        }
+
+        p {
+          font-size: 12px;
+          strong {
+            color: #229870;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bg-limit-bar-next {
+  background: $primary-color;
+}
+
+.bg-limit-bar-atual {
+  background: $secondary-color;
+}
+
+.bg-limit-bar-disponivel {
+  background: #229870;
+}
