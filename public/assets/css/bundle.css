@@ -7246,29 +7246,40 @@ a.text-dark:hover, a.text-dark:focus {
   margin-top: 15px;
   margin-right: 15px;
   min-height: 137px;
-  border-radius: 30px; }
+  background-color: #ffffff;
+  border-radius: 5px;
+  overflow: hidden;
+  border-left: 5px solid #ffffff;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer; }
+
+.section-account .account-list .card:hover {
+  border-left: 5px solid #f57921; }
 
 .section-account .account-list .card .card-icon {
   width: 32px;
   height: 32px;
-  background-color: red;
   position: absolute;
-  top: -8px;
-  right: -8px;
+  top: 7px;
+  right: 5px;
   -webkit-border-radius: 32px;
   border-radius: 32px;
   text-align: center;
   line-height: 32px; }
+  .section-account .account-list .card .card-icon .material-icons-outlined {
+    color: #f57921; }
 
 .section-account .account-list .card .card-title {
   line-height: 24px; }
 
 .section-account .account-list .card .card-title strong {
   display: block;
-  font-size: 18px; }
+  font-size: 18px;
+  color: #252220; }
 
 .section-account .account-list .card .card-title span {
-  font-size: 14px; }
+  font-size: 14px;
+  color: #252220; }
 
 .section-account .account-list .card .card-text {
   font-size: 24px;
@@ -7278,10 +7289,37 @@ a.text-dark:hover, a.text-dark:focus {
   color: #229870; }
 
 .section-account .account-list .card .card-text.negative {
-  color: #935BA8; }
+  color: #935ba8; }
 
 .section-account .account-list .card .card-text a {
   float: right; }
+
+.section-account .account-list .card-active {
+  background-color: #004990 !important;
+  border-left: 5px solid #0063c3; }
+  .section-account .account-list .card-active:hover {
+    border-left: 5px solid #0063c3; }
+  .section-account .account-list .card-active .card-icon .material-icons-outlined {
+    color: #fff; }
+  .section-account .account-list .card-active .card-title strong {
+    color: #fff; }
+  .section-account .account-list .card-active .card-title span {
+    font-size: 14px;
+    color: #fff; }
+  .section-account .account-list .card-active .card-text {
+    font-size: 24px;
+    color: #fff; }
+  .section-account .account-list .card-active .card-text.positive {
+    color: #229870; }
+  .section-account .account-list .card-active .card-text.negative {
+    color: #e190ff !important; }
+  .section-account .account-list .card-active .card-text a {
+    float: right; }
+  .section-account .account-list .card-active .feather {
+    color: #fff; }
+
+.feather {
+  color: #004990; }
 
 .table-transfer {
   width: 100%;
