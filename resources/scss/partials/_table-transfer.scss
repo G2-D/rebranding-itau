@@ -1,9 +1,18 @@
+.table-content {
+	display: flex;
+	margin-top: 64px;
+}
+
+.table-aside {
+	width: 320px;
+	flex: 0 0 320px;
+}
+
 .table-transfer {
 
 	& {
 		width: 100%;
-		float: left;
-		margin-top: 64px;
+		display: flex;
 		padding-left: 15px;
 	}
 
@@ -12,6 +21,7 @@
 		& {
 			background-color: #FFFFFF;
 			border-top-left-radius: 18px;
+			border-top-right-radius: 18px;
 			border: 0;
 			box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
 		}
