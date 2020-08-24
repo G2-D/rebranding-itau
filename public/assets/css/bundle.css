@@ -7283,15 +7283,23 @@ a.text-dark:hover, a.text-dark:focus {
 .section-account .account-list .card .card-text a {
   float: right; }
 
+.table-content {
+  display: flex;
+  margin-top: 64px; }
+
+.table-aside {
+  width: 320px;
+  flex: 0 0 320px; }
+
 .table-transfer {
   width: 100%;
-  float: left;
-  margin-top: 64px;
+  display: flex;
   padding-left: 15px; }
 
 .table-transfer .table {
   background-color: #FFFFFF;
   border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
   border: 0;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2); }
 
@@ -7388,6 +7396,121 @@ a.text-dark:hover, a.text-dark:focus {
       .nav-main .user-menu .user-data span {
         font-size: 12px;
         color: #9e9fa3; }
+
+.card-aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 18px;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin-bottom: 24px; }
+
+.card-aside.card-manager {
+  justify-content: center; }
+
+.card-aside.card-manager .card-avatar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  align-items: center; }
+
+.card-aside.card-manager .card-avatar h6 {
+  display: block;
+  padding-right: 15px;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  text-align: right; }
+
+.card-aside.card-manager .card-avatar figure {
+  display: block;
+  margin: 0 auto; }
+
+.card-aside.card-manager .card-avatar figure img {
+  width: 80px;
+  height: auto;
+  border-radius: 80px;
+  border: 1px solid #e3cdc9; }
+
+.card-aside.card-manager .card-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.card-aside.card-manager .card-info h5 {
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 16px;
+  color: #004990; }
+
+.card-aside.card-manager .card-info h5 small {
+  display: block;
+  font-style: italic;
+  color: #f57921; }
+
+.card-aside.card-manager .card-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-top: 16px; }
+
+.card-aside.card-manager .card-info ul li {
+  flex: 1;
+  text-align: center; }
+
+.card-aside.card-manager .card-info ul li a {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-color: #004990;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 9px; }
+
+.card-aside.card-manager .card-info ul li a i {
+  line-height: 40px; }
+
+.card-aside.card-contact ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; }
+
+.card-aside.card-contact ul li {
+  flex: 0 0 25%;
+  display: flex;
+  padding: 4px; }
+
+.card-aside.card-contact ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 57px;
+  border-radius: 65px; }
+
+.card-aside.card-contact ul li a.btn-add-contact {
+  background-color: #004990;
+  border-color: #004990;
+  text-align: center;
+  text-decoration: none; }
+
+.card-aside.card-contact ul li a.btn-add-contact i {
+  font-size: 24px;
+  color: #FFFFFF; }
+
+.card-aside.card-contact ul li a img {
+  display: block;
+  max-width: 100%;
+  border-radius: 65px;
+  border: 1px solid #e3cdc9; }
 
 body {
   font-size: 0.875rem;
