@@ -1,0 +1,26 @@
+@import "./vars";
+
+.account-header {
+  margin-top: 20px;
+  border: 2px solid #e3cdc9;
+  border-radius: 18px 18px 18px 18px;
+  margin-right: 30px;
+
+  .balance {
+    strong {
+      color: #727272;
+      font-weight: bold;
+    }
+
+    span {
+      font-size: 25px;
+      color: #7b3f91;
+    }
+  }
+
+  .accout-header-actions {
+    button {
+      border: none;
+    }
+  }
+}
