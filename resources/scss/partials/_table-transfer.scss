@@ -1,128 +1,133 @@
 .table-content {
-	display: flex;
-	margin-top: 64px;
+  display: flex;
+  margin-top: 20px;
 }
 
 .table-aside {
-	width: 320px;
-	flex: 0 0 320px;
+  width: 380px;
+  flex: 0 0 380px;
+  margin-right: 15px;
 }
 
 .table-transfer {
+  & {
+    width: 100%;
+    display: flex;
+    padding-left: 16px;
+    margin-right: 10px;
+  }
 
-	& {
-		width: 100%;
-		display: flex;
-		padding-left: 15px;
-	}
+  .table {
+    & {
+      background-color: #ffffff;
+      border-radius: 5px;
+      border: 0;
+      box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    }
 
-	.table {
-		
-		& {
-			background-color: #FFFFFF;
-			border-top-left-radius: 18px;
-			border-top-right-radius: 18px;
-			border: 0;
-			box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
-		}
+    tr {
+      th {
+        font-weight: 600;
+        font-size: 16px;
+        padding: 18px 24px;
+      }
+      &:hover {
+        td {
+          background-color: lighten($color: $primary-color, $amount: 30%);
+        }
+      }
 
-		tr {
+      &:not(:last-child) {
+        td {
+          border-bottom: 1px solid #e3cdc9;
+        }
+      }
+    }
 
-			&:hover {
+    th,
+    td {
+      padding: 4px 24px;
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: normal;
+      border: 0;
+      vertical-align: middle;
 
-				td {
-					background-color: lighten($color: #e3cdc9, $amount: 10%);
-				}
-			} 
+      &.amount {
+        text-align: right;
+      }
+    }
 
-			&:not(:last-child) {
+    th {
+      & {
+        border-bottom: 1px solid #e3cdc9;
+      }
 
-				td {
-					border-bottom: 1px solid #e3cdc9;
-				}
-			}
-		}
+      button.btn-sortable {
+        & {
+          width: 24px;
+          height: 18px;
+          background: transparent;
+          border: 0;
+          vertical-align: middle;
+          padding: 0;
+          outline: none;
+        }
 
-		th, td {
-			padding: 18px 24px;
-			font-size: 14px;
-			line-height: 14px;
-			font-weight: normal;
-			border: 0;
-			vertical-align: middle;
+        i {
+          width: 100%;
+          font-size: 18px;
+          line-height: 18px;
+        }
+      }
+    }
 
-			&.amount {
-				text-align: right;
-			}
-		}
+    td {
+      .flag {
+        & {
+          display: inline-block;
+          padding: 8px;
+          font-size: 14px;
+          line-height: 14px;
+          font-weight: normal;
+          border-radius: 4px;
+          border: 1px solid transparent;
+        }
 
-		th {
-			
-			& {
-				border-bottom: 1px solid #e3cdc9;
-			}
+        &-done {
+          @include flag(#229870);
+        }
 
-			button.btn-sortable {
-				
-				& {
-					width: 24px;
-					height: 18px;
-					background: transparent;
-					border: 0;
-					vertical-align: middle;
-					padding: 0;
-					outline: none;
-				}
+        &-canceled {
+          @include flag(#935ba8);
+        }
 
-				i {
-					width: 100%;
-					font-size: 18px;
-					line-height: 18px;
-				}
-			}
-		}
+        &-pending {
+          @include flag(#838383);
+        }
+      }
 
-		td {
+      .btn-details {
+        & {
+          float: right;
+          color: darken($color: #e3cdc9, $amount: 30%);
+          border-color: darken($color: #e3cdc9, $amount: 5%);
+        }
 
-			.flag {
+        &:hover {
+          color: #ffffff;
+          background-color: darken($color: #e3cdc9, $amount: 50%);
+          border-color: darken($color: #e3cdc9, $amount: 50%);
+        }
+      }
+    }
+  }
+}
 
-				& {
-					display: inline-block;
-					padding: 8px;
-					font-size: 14px;
-					line-height: 14px;
-					font-weight: normal;
-					border-radius: 4px;
-					border: 1px solid transparent;
-				}
+.positive {
+  color: #1f8865;
+}
 
-				&-done {
-					@include flag(#229870);
-				}
-
-				&-canceled {
-					@include flag(#935BA8);
-				}
-
-				&-pending {
-					@include flag(#ffe512);
-				}
-			}
-
-			.btn-details {
-				
-				& {
-					float: right;
-					color: darken($color: #e3cdc9, $amount: 30%);
-					border-color: darken($color: #e3cdc9, $amount: 5%);
-				}
-
-				&:hover {
-					color: #FFFFFF;
-					background-color: darken($color: #e3cdc9, $amount: 50%);
-					border-color: darken($color: #e3cdc9, $amount: 50%);
-				}
-			}
-		}
-	}
+.negative {
+  color: #673679;
 }
