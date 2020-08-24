@@ -10,7 +10,7 @@ Rebranding Itaú
   <p align="center">
   <br><br>
   <p align="center">
-    <a href="#" targe="_blank">LIVE DEMO</a>
+    <a href="https://rebranding-itau-g2-d.netlify.app/" targe="_blank">LIVE DEMO</a>
   <p align="center">
 </div>
 
