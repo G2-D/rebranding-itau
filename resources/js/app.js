@@ -1,5 +1,7 @@
 import "../scss/app.scss";
 
+feather.replace();
+
 var renderContactList = async function () {
   var templateList = document.getElementById("contact_list_template").content;
   var contactList = document.getElementById("contact_list");
