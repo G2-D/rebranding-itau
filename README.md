@@ -2,7 +2,7 @@
 Task Manager
 </h1>
 
-<p align="center">Atividade DevBoost da criação de um CRUD para gerenciamento de tarefas.</p>
+<p align="center">Rebranding itau internet banking</p>
 <br><br><br><br>
 <div>
   <p align="center">
