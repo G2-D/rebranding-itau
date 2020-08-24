@@ -1,0 +1,51 @@
+@import "./vars";
+
+.nav-main {
+  border: 2px solid #e3cdc9;
+  border-radius: 0px 0px 0px 18px;
+  border-right: none;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #f0e9e6;
+
+  .breadcrumb-brand {
+    .breadcrumb-brand-item {
+      font-size: 16px;
+      font-weight: 600;
+      color: $secondary-color;
+    }
+  }
+
+  .actions {
+    .material-icons-outlined {
+      color: #1c2f3a;
+      cursor: pointer;
+
+      & + .material-icons-outlined {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  .user-menu {
+    margin-left: 20px;
+    .avatar {
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+    }
+
+    .user-data {
+      cursor: pointer;
+      strong {
+        font-size: 14px;
+      }
+
+      span {
+        font-size: 12px;
+        color: #9e9fa3;
+      }
+    }
+  }
+}

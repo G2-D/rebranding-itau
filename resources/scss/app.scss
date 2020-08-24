@@ -1,1 +1,22 @@
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+@import "./partials/mixins";
+@import "./partials/navbar";
+@import "./partials/sidebar";
+@import "./partials/section-accounts";
+@import "./partials/table-transfer";
+@import "./partials/navmain";
+@import "./partials/cards-brand";
+@import "./partials/acount-header";
+@import "./partials/card-aside";
+
+body {
+  font-size: 0.875rem;
+  font-family: myriad-pro, sans-serif;
+  background: #f0e9e6;
+}
+
+main {
+  width: 100%;
+  padding-left: 126px;
+  height: 100vh;
+}

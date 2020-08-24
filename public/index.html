@@ -1,18 +1,517 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/bundle.css">
-        <title>Rebranding Itau</title>
-    </head>
-    <body>
-		<h1>
-			Teste
-		</h1>
-		<button class="btn btn-success">
-			teste
-		</button>
-        <script src="assets/js/bundle.js" defer></script>
-    </body>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/bundle.css">
+	<link
+		href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/gpx0cjy.css">
+	<title>Rebranding Itau</title>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<div class="row">
+
+			<!-- #sidebar-menu -->
+			<nav id="sidebarMenu" class="col-md-1 col-lg-1 d-md-block bg-secondary-brand sidebar">
+				<div class="sidebar-sticky pt-3">
+					<ul class="nav flex-column">
+						<li class="nav-item">
+							<a class="nav-link mb-2 d-flex justify-content-center" href="#">
+								<img src="assets/images/logo.png" width="60px" />
+							</a>
+						</li>
+						<li class="nav-item p-3 d-flex justify-content-center">
+							<a class="nav-link active" href="#">
+								<i class="material-icons-outlined">home</i>
+							</a>
+						</li>
+						<li class="nav-item p-3 d-flex justify-content-center">
+							<a class="nav-link" href="#">
+								<i class="material-icons-outlined">account_balance_wallet</i>
+							</a>
+						</li>
+						<li class="nav-item p-3 d-flex justify-content-center">
+							<a class="nav-link" href="#">
+								<i class="material-icons-outlined">sync_alt</i>
+							</a>
+						</li>
+						<li class="nav-item p-3 d-flex justify-content-center">
+							<a class="nav-link" href="#">
+								<i class="material-icons-outlined">credit_card</i>
+							</a>
+						</li>
+						<li class="nav-item p-3 d-flex justify-content-center">
+							<a class="nav-link" href="#">
+								<i class="material-icons-outlined">trending_up</i>
+							</a>
+						</li>
+						<li class="nav-item p-3 d-flex justify-content-center">
+							<a class="nav-link" href="#">
+								<i class="material-icons-outlined">phone_iphone</i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- /sidebar-menu -->
+
+			<!-- class="col-md-9 ml-sm-auto col-lg-10 px-md-4" -->
+			<main role="main">
+				<nav class="nav-main d-flex justify-content-between pl-4 pb-2 pr-4 pt-2 ml-5 align-items-center">
+					<div class="breadcrumb-brand">
+						<span class="breadcrumb-brand-item">Home</span>
+					</div>
+					<div class="actions d-flex align-items-center">
+						<i class="material-icons-outlined">search</i>
+						<i class="material-icons-outlined">message</i>
+						<i class="material-icons-outlined">notifications</i>
+						<div class="user-menu d-flex align-items-center">
+							<img class="avatar rounded-circle" src="https://randomuser.me/api/portraits/men/26.jpg" />
+							<div class="user-data d-flex flex-column ml-2">
+								<strong>John Doe</strong>
+								<span>0900 / 395593-2</span>
+							</div>
+						</div>
+					</div>
+				</nav>
+
+				<!-- #section-account -->
+				<div class="d-flex">
+					<div class="section-account flex-fill">
+						<div class="col">
+							<div class="account-list">
+								<div class="card card-active">
+									<div class="card-icon">
+										<i class="material-icons-outlined">account_balance_wallet</i>
+									</div>
+									<div class="card-body">
+										<h6 class="card-title">
+											<strong>
+												JOHN DOE
+											</strong>
+											<span>
+												Conta Corrente
+											</span>
+										</h6>
+										<p class="card-text negative">
+											- R$ 1.2345,67
+											<a href="#" title="Ver fatura">
+												<span data-feather="eye"></span>
+											</a>
+										</p>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-icon">
+										<i class="material-icons-outlined">account_balance_wallet</i>
+									</div>
+									<div class="card-body">
+										<h6 class="card-title">
+											<strong>
+												JOHN DOE
+											</strong>
+											<span>
+												Poupança
+											</span>
+										</h6>
+										<p class="card-text positive">
+											R$ 1.2345,67
+											<a href="#" title="Ver fatura">
+												<span data-feather="eye"></span>
+											</a>
+										</p>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-icon">
+										<i class="material-icons-outlined">account_balance_wallet</i>
+									</div>
+									<div class="card-body">
+										<h6 class="card-title">
+											<strong>
+												JOHN DOE
+											</strong>
+											<span>
+												Conta Conjunta
+											</span>
+										</h6>
+										<p class="card-text">
+											R$ 0,00
+											<a href="#" title="Ver fatura">
+												<span data-feather="eye"></span>
+											</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div
+							class="account-header d-flex ml-3 p-3 pl-4 pr-4 align-items-center justify-content-between">
+							<div class="balance d-flex flex-column">
+								<strong>Saldo</strong>
+								<span>- R$ 1.234, 67</span>
+							</div>
+							<div class="accout-header-actions d-flex flex-row">
+								<button class=" d-flex align-items-center justify-content-center"> <i
+										class="material-icons-outlined mr-2">
+										payments
+									</i><span>Pagar</span></button>
+								<button class=" d-flex align-items-center justify-content-center ml-2"> <i
+										class="material-icons-outlined mr-2">
+										cloud_download
+									</i><span>Extrato</span></button>
+							</div>
+						</div>
+					</div>
+					<div class="cards-brand flex-fill">
+						<div class="card d-flex flex-row">
+							<img src="./assets/images/itaucard-uniclass-mastercard-black.png" width="252px" />
+							<div class="card-data ml-4 d-flex flex-column justify-content-between">
+								<div class="card-icon">
+									<i class="material-icons-outlined">credit_card</i>
+								</div>
+								<header class="title">Cartão de crédito</header>
+								<div class="data-item d-flex flex-column">
+									<span>FATURA ATUAL</span>
+									<strong>R$ 2.640,14</strong>
+									<p>Limite disponivel <strong>R$ 19,01</strong></p>
+								</div>
+								<div class="card-data-footer">
+									<div class="progress">
+										<div class="progress-bar bg-limit-bar-next" role="progressbar"
+											style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+										</div>
+										<div class="progress-bar bg-limit-bar-atual " role="progressbar"
+											style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+										</div>
+										<div class="progress-bar bg-limit-bar-disponivel" role="progressbar"
+											style="width: 5%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /section-account -->
+
+				<div class="table-content">
+					<div class="table-transfer">
+						<table class="table">
+							<thead>
+								<tr>
+									<th class="company">
+									</th>
+									<th class="date">
+										Date
+										<button class="btn-sortable">
+											<i class="material-icons-outlined">
+												keyboard_arrow_down
+											</i>
+										</button>
+									</th>
+									<th class="status">
+										Status
+										<button class="btn-sortable">
+											<i class="material-icons-outlined">
+												keyboard_arrow_down
+											</i>
+										</button>
+									</th>
+									<th class="amount">
+										Amount
+										<button class="btn-sortable">
+											<i class="material-icons-outlined">
+												keyboard_arrow_down
+											</i>
+										</button>
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td class="company">
+										Transferencia
+										DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-done">
+											Done
+										</b>
+									</td>
+									<td class="amount positive">
+										+ R$ 1.234,56
+									</td>
+
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-canceled">
+											Canceled
+										</b>
+									</td>
+									<td class="amount negative">
+										- R$ 1.234,56
+									</td>
+
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-pending">
+											Pending
+										</b>
+									</td>
+									<td class="amount negative">
+										- R$ 1.234,56
+									</td>
+
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-done">
+											Done
+										</b>
+									</td>
+									<td class="amount negative">
+										- R$ 1.234,56
+									</td>
+
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-canceled">
+											Canceled
+										</b>
+									</td>
+									<td class="amount negative">
+										- R$ 1.234,56
+									</td>
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-pending">
+											Pending
+										</b>
+									</td>
+									<td class="amount negative">
+										- R$ 1.234,56
+									</td>
+
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-done">
+											Done
+										</b>
+									</td>
+									<td class="amount negative">
+										- R$ 1.234,56
+									</td>
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-done">
+											Done
+										</b>
+									</td>
+									<td class="amount positive">
+										+ R$ 1.234,56
+									</td>
+
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-done">
+											Done
+										</b>
+									</td>
+									<td class="amount negative">
+										- R$ 1.234,56
+									</td>
+
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-done">
+											Done
+										</b>
+									</td>
+									<td class="amount positive">
+										+ R$ 1.234,56
+									</td>
+
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-done">
+											Done
+										</b>
+									</td>
+									<td class="amount negative">
+										- R$ 1.234,56
+									</td>
+
+								</tr>
+								<tr>
+									<td class="company">
+										Transferencia DOC para Conta corrente ITAU - Ag: 0900 C/C 345672-9
+									</td>
+									<td class="date">
+										20 Aug 2020
+									</td>
+									<td class="status">
+										<b class="flag flag-done">
+											Done
+										</b>
+									</td>
+									<td class="amount">
+										R$ 1.234,56
+									</td>
+
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="table-aside">
+						<div class="col">
+							<div class="card-aside card-contact">
+								<div class="card-icon">
+									<i class="material-icons-outlined">people</i>
+								</div>
+								<ul id="contact_list">
+									<li>
+										<a href="#" class="btn-add-contact">
+											<i class="material-icons-outlined">
+												add
+											</i>
+										</a>
+									</li>
+								</ul>
+								<template id="contact_list_template">
+									<li>
+										<a href="#">
+											<img />
+										</a>
+									</li>
+								</template>
+							</div>
+							<div class="card-aside card-manager">
+								<div class="card-avatar">
+									<h6>
+										Precisando de ajuda? Fale com o seu gerente.
+									</h6>
+									<figure>
+										<img src="https://randomuser.me/api/portraits/men/21.jpg" />
+									</figure>
+								</div>
+								<div class="card-info">
+									<h5>
+										Hector Richardson
+										<small>
+											Gerente
+										</small>
+									</h5>
+									<ul>
+										<li>
+											<a href="tel:3667635726" title="Telefone">
+												<i class="material-icons">
+													call
+												</i>
+											</a>
+										</li>
+										<li>
+											<a href="mailto:hector.richardson@example.com" title="E-mail">
+												<i class="material-icons">
+													mail
+												</i>
+											</a>
+										</li>
+										<li>
+											<a href="mailto:hector.richardson@example.com" title="Chat">
+												<i class="material-icons">
+													message
+												</i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</main>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
+	<script src="assets/js/bundle.js" defer></script>
+
 </html>
