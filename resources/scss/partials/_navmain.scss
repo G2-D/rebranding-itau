@@ -4,6 +4,10 @@
   border: 2px solid #e3cdc9;
   border-radius: 0px 0px 0px 18px;
   border-right: none;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #f0e9e6;
 
   .breadcrumb-brand {
     .breadcrumb-brand-item {

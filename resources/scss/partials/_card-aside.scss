@@ -1,176 +1,174 @@
 .card-aside {
+  & {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
+    padding: 28px;
+    margin-bottom: 24px;
+  }
 
-	& {
-		display: flex;
-		flex-direction: column;
-		background-color: #FFFFFF;
-		border-radius: 18px;
-		box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
-		padding: 15px;
-		margin-bottom: 24px;
-	}
+  .card-icon {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 7px;
+    right: 22px;
+    -webkit-border-radius: 32px;
+    border-radius: 32px;
+    text-align: center;
+    line-height: 32px;
 
-	&.card-manager {
+    .material-icons-outlined {
+      color: $primary-color;
+    }
+  }
 
-		& {
-			justify-content: center;
-		}
-	
-		.card-avatar {
-	
-			& {
-				width: 100%;
-				display: flex;
-				flex-direction: row;
-				margin-left: auto;
-				align-items: center;
-			}
-	
-			h6 {
-				display: block;
-				padding-right: 15px;
-				font-size: 16px;
-				line-height: 24px;
-				margin: 0;
-				text-align: right;
-			}
-	
-			figure {
-				
-				& {
-					display: block;
-					margin: 0 auto;
-				}
-	
-				img {
-					width: 80px;
-					height: auto;
-					border-radius: 80px;
-					border: 1px solid #e3cdc9;
-	
-				}
-			}
-		}
-	
-		.card-info {
-	
-			& {
-				width: 100%;
-				display: flex;
-				flex-direction: column;
-			}
-	
-			h5 {
-				
-				& {
-					width: 100%;
-					display: block;
-					font-size: 18px;
-					line-height: 24px;
-					text-align: center;
-					margin-top: 16px;
-					color: $secondary-color;
-				}
-	
-				small {
-					display: block;
-					font-style: italic;
-					color: $primary-color;
-				}
-			}
-	
-			ul {
-	
-				& {
-					list-style: none;
-					padding: 0;
-					margin: 0;
-					display: flex;
-					margin-top: 16px;
-				}
-	
-				li {
-	
-					& {
-						flex: 1;
-						text-align: center;
-					}
-	
-					a {
-						
-						& {
-							width: 40px;
-							height: 40px;
-							display: inline-block;
-							background-color: $secondary-color;
-							color: #FFFFFF;
-							cursor: pointer;
-							border-radius: 9px;
-						}
-	
-						i {
-							line-height: 40px;
-						}
-					}
-				}
-			}
-		}
-	}
+  &.card-manager {
+    & {
+      justify-content: center;
+      display: flex;
+    }
 
-	&.card-contact {
+    .card-avatar {
+      & {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        align-items: center;
+      }
 
-		ul {
+      h6 {
+        display: block;
+        padding-right: 15px;
+        font-size: 16px;
+        line-height: 24px;
+        margin: 0;
+        text-align: right;
+      }
 
-			& {
-				list-style: none;
-				padding: 0;
-				margin: 0;
-				display: flex;
-				flex-wrap: wrap;
-			}
+      figure {
+        & {
+          display: block;
+          margin: 0 auto;
+        }
 
-			li {
+        img {
+          width: 80px;
+          height: auto;
+          border-radius: 80px;
+          border: 1px solid #e3cdc9;
+        }
+      }
+    }
 
-				& {
-					flex: 0 0 25%;
-					display: flex;
-					padding: 4px;
-				}
+    .card-info {
+      & {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
 
-				a {
+      h5 {
+        & {
+          width: 100%;
+          display: block;
+          font-size: 18px;
+          line-height: 24px;
+          text-align: center;
+          margin-top: 16px;
+          color: $secondary-color;
+        }
 
-					& {
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						width: 100%;
-						height: 57px;
-						border-radius: 65px;
-					}
+        small {
+          display: block;
+          font-style: italic;
+          color: $primary-color;
+        }
+      }
 
-					&.btn-add-contact {
-						
-						& {
-							background-color: $secondary-color;
-							border-color: $secondary-color;
-							text-align: center;
-							text-decoration: none;
-						}
-						
-						i {
-							font-size: 24px;
-							color: #FFFFFF;
-						}
-					}
+      ul {
+        & {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          margin-top: 16px;
+        }
 
-					img {
-						display: block;
-						max-width: 100%;
-						border-radius: 65px;
-						border: 1px solid #e3cdc9;
-					}
-				}
-			}
-		}
-	}
+        li {
+          & {
+            flex: 1;
+            text-align: center;
+          }
+
+          a {
+            & {
+              display: inline-block;
+              color: $primary-color;
+              cursor: pointer;
+            }
+
+            i {
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.card-contact {
+    ul {
+      & {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      li {
+        & {
+          flex: 0 0 25%;
+          display: flex;
+          padding: 8px;
+        }
+
+        a {
+          & {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 57px;
+            border-radius: 65px;
+          }
+
+          &.btn-add-contact {
+            & {
+              background-color: $primary-color;
+              border-color: $primary-color;
+              text-align: center;
+              text-decoration: none;
+            }
+
+            i {
+              font-size: 24px;
+              color: #ffffff;
+            }
+          }
+
+          img {
+            display: block;
+            max-width: 100%;
+            border-radius: 65px;
+            border: 1px solid #e3cdc9;
+          }
+        }
+      }
+    }
+  }
 }

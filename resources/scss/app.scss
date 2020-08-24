@@ -5,6 +5,8 @@
 @import "./partials/section-accounts";
 @import "./partials/table-transfer";
 @import "./partials/navmain";
+@import "./partials/cards-brand";
+@import "./partials/acount-header";
 @import "./partials/card-aside";
 
 body {
@@ -15,6 +17,6 @@ body {
 
 main {
   width: 100%;
-  padding-left: 106px;
+  padding-left: 126px;
   height: 100vh;
 }
